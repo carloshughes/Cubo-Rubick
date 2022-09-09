@@ -1,0 +1,104 @@
+body{
+    background: #000000;
+    position: relative;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    
+}
+
+.contenedor{
+    width:  350px;
+    height: 350px;
+    position: relative;
+    margin: 5em auto;
+    
+    perspective: 700px;
+}
+.cubo,
+.cara{
+    width:  100%;
+    height: 100%;
+    position: absolute;
+}
+.cubo{
+    transform-style: preserve-3d;
+    animation: girarCuboX 7s infinite;
+    animation-direction: alternate;
+    
+}
+
+.cubo:hover{
+    animation: girarCuboY 7s infinite;
+    animation-direction: alternate;
+        
+}
+
+@keyframes girarCuboX{
+    from {
+        transform: rotateX(0);
+    }to{
+        transform: rotateX(360deg);
+    }
+}
+
+@keyframes girarCuboY{
+    from {
+        transform: rotateY(0);
+    }to{
+        transform:  rotateY(360deg);
+    }
+}
+
+.carasinferiores{
+    float: left;
+    width: 32.19%;
+    height: 32.19%;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+#uno{
+    background: #FF0000;
+    transform: translateZ(175px);
+}
+
+#dos{
+    background: #FF5F1F;
+    transform: translateX(175px) rotateY(90deg);  
+}
+
+#tres{
+    background: #FFFF00;
+    transform: translateZ(-175px);  
+}
+
+#cuatro{
+    background: #0000FF; 
+    transform: translateX(-175px) rotateY(90deg);  
+}
+
+#cinco{
+    background: #00FF00;
+    transform: translateY(-175px) rotateX(90deg);  
+}
+
+#seis{
+    background: white;
+    transform: translateY(175px) rotateX(90deg);  
+}
+.caraBlanca5{
+    background-image: url(ch.png);
+    background-size: 100% 100%;
+}
+.caraBlanca5r{
+    background-image: url(chrr.png);
+    background-size: 100% 100%;
+}
+
+.caraBlanca5iz{
+    background-image: url(chiz.png);
+    background-size: 100% 100%;
+}
+
