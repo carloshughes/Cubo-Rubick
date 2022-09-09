@@ -1,2 +1,2 @@
-# Cubo-Rubick
+# Cubo-Rubick-Game
 The famous Cubo Rubik game was simulated with this simple animations with CSS on html
